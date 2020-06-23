@@ -11,6 +11,7 @@ html{
 }
 body{
 	overflow-x: hidden;
+	width: 100%;
 }
 /*Estações*/
 
@@ -64,7 +65,7 @@ body{
 	position: relative;
 	background: #069370;
     height: 500px;
-    width: 100vw;
+    width: 100%;
    transform: skewY(-5deg);
 
 }
@@ -146,7 +147,7 @@ font-size: 2.3rem;
 	
 	margin-top: 10vw;
     position: bottom;
-     width: 100vw;
+     width: 100%;
 	 flex-direction: column;
 	 align-items: center;
 	 text-align: center;
@@ -245,6 +246,7 @@ nav ul li a:hover{
 
 }
 .topo{
+	  text-align: right;
 	height: 550px;
    }
 
