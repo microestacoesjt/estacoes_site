@@ -211,6 +211,9 @@ flex-direction: column;
 
 
 iframe{
+    display: flex;
+    width: 50vw;
+    height: 25vw;
   box-shadow:2px 2px 5px;
   border-radius:10px;
   margin-top: 20px;
@@ -248,6 +251,9 @@ iframe{
        
 
     }
+    
+
+
     .estacoes .container{
 
         width:150px;
@@ -258,5 +264,12 @@ iframe{
 
         height: 350px;
     }
+   iframe{
+
+    width: 80vw;
+    height: 50vw;
+}
+
+
 }
 

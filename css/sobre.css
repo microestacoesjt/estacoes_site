@@ -17,19 +17,22 @@
 
 }
 .sobre img{
-	width: 350px;
-	height: 350px;
+	width: 25vw;
+	height: 25vw;
 	margin-left: 8vw;
 }
-.sobre1{
-	display: flex;
-	   	justify-content: center;
 
-}
 .sobre p{
 	text-align: justify;
 	font-size: 1.6rem;
 	color: white;
 	margin-left : 10px;
 	max-width: 500px;
+}
+@media (min-width: 800px){
+.sobre1{
+	display: flex;
+	justify-content: center;
+
+}
 }
