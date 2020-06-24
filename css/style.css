@@ -181,6 +181,7 @@ font-size: 2.3rem;
 /*Cabeçalho*/
 header
 {
+
 	top: 17vh;
 	transform: skewY(5deg);
 	position: relative;
@@ -231,6 +232,7 @@ nav ul li a:hover{
 @media (max-width: 1200px){
 	header {
 		margin: 20px;
+		margin-bottom: 10vh;
 	}
 	.main-message h1 {
 		font-size: 2.0rem;
@@ -247,7 +249,7 @@ nav ul li a:hover{
 
 }
 .topo{
-	  text-align: right;
+	
 	height: 550px;
    }
 

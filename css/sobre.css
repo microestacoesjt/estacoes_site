@@ -8,6 +8,7 @@
  	align-items: center;
 
 }
+
 .sobre h1{
 	padding-bottom: 8px;
 	font-size: 4.5rem;
@@ -33,6 +34,20 @@
 .sobre1{
 	display: flex;
 	justify-content: center;
+
+}
+}
+@media (max-width: 500px){
+	.sobre h1{
+		font-size: 2.0rem;
+	}
+	.sobre p{
+	font-size: 1.3rem;
+	color: white;
+	margin : 0 8vw;
+	max-width: 350px;
+
+	}
 
 }
 }
