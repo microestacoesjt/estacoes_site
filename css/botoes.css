@@ -184,7 +184,8 @@ transform: skew(0deg, 5deg);
 /*lista */
 
 .lista{
-margin-top: 8vw;
+    margin-bottom: 8vh;
+margin-top: 1vw;
 	width: 800px;
 	 height: 300px;
 		position: static;

@@ -8,34 +8,43 @@
          <link rel="stylesheet" type="text/css" href="css/botoes.css">
       <link rel="stylesheet" type="text/css" href="css/solicite.css">
            <link rel="stylesheet" type="text/css" href="css/sobre.css">
+            <link rel="stylesheet" type="text/css" href="css/menu.css">
         <link rel="stylesheet" type="text/css" href="css/swiper.min.css" >
-	   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 	<title>Microestações Meteorológicas</title>
 </head>
 <body>
+
 <main>
+ 
 	<section class="topo">
-	<!--Header-->
-	<header>
-		<!--<a href="#" class="logo">Logo</a>-->
-		<div ><img class="logo" src="images/logo.png"></div>
-		<div class="menu-toggle"></div>
-		<nav>
-				<ul>
-					<li><a href="#" class="active" href="#container1">Página Inicial</a></li>
-					<li><a href="#estacoes">Estações</a></li>
-					<li><a href="#sobre">Sobre</a></li>
-				</ul>
-			</nav>
-			<div class="clearfix"></div>
-	</header>
-	
-    <!--Header-->
-   
-    <!--parte principal-->
-<main>
+
+   <!--Header-->
+
+ <header>
+    <img class="logo" src="images/logo.png">
+    <input type="checkbox" id="chk">
+    <label for="chk" class="show-menu-btn">
+      <i class="fas fa-ellipsis-h"></i>
+    </label>
+
+    <ul class="menu">
+      <a href="#topo" onclick="fechar()" >Inicio</a>
+      <a href="#estacoes" onclick="fechar()" >Estações</a>
+      <a href="#sobre" onclick="fechar()">Sobre</a>
+      <a href="#" onclick="fechar()">Contato</a>
+
+      <label for="chk" class="hide-menu-btn">
+        <i class="fas fa-times"></i>
+      </label>
+    </ul>
+</header>
+
+    <!--Header--> <!--parte principal-->
+  
       <div class="container2">
+
       	<div class="main-message">
 
       		<h3>Programa Jovens Talentos para Ciência - FAPERJ</h3>
@@ -50,12 +59,15 @@
       </div>
  
 
- 
+
        </section>
+
+
     <!--parte principal-->
 <section class="estacoes" id="estacoes">
-<div class="linhatitulo">
-    <h1>Estações</h1>
+
+   <h1>Estações</h1>
+   
     <div class="linha2"></div>
   </div>
 <ul class="lista">
@@ -161,7 +173,9 @@
      <img src="images/photo.jpg">
       <p>Este é um projeto para realizar a identificação e o monitoramento de micro climas na cidade de 
         Campos dos Goytacazes - RJ. É um projeto de pesquisa da FAPERJ em execução desde Julho/2019 onde 
-        é conduzido no IFFluminense pelo prof. <b href="http://lattes.cnpq.br/9246421703859581">Rogério Avellar</b> juntamente com os bolsistas <b href=" http://lattes.cnpq.br/0919125095893456">Arthur Carvalho</b> e <b href="http://lattes.cnpq.br/6952759765493287">Mateus Henrique da Silva</b>.</p>
+        é conduzido no IFFluminense pelo prof. <b href="http://lattes.cnpq.br/9246421703859581">Rogério Avellar</b>
+         juntamente com os bolsistas <b href=" http://lattes.cnpq.br/0919125095893456">Arthur Carvalho</b> 
+         e <b href="http://lattes.cnpq.br/6952759765493287">Mateus Henrique da Silva</b>.</p>
         
 
     </div>
@@ -200,22 +214,7 @@
 
   </main>
 
-   
-    
-    
-  <!--Funcionamento do botão-->
-<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$('.menu-toggle').click(function(){
-				$('.menu-toggle').toggleClass('active')
-				$('nav').toggleClass('active')
-
-			})
-		})
-	</script>
-
-
+ <!--<script src="js/main.js"></script>-->  
 
 </body>
 </html>
