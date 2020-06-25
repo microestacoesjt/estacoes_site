@@ -1,17 +1,9 @@
-// var option = document.querySelector('.option')
-var menu = document.querySelector('.menu')
+var checkbox = document.getElementById('chk');
 
-// option.addEventListener('click', fechar())
+function fechar () {   
+    checkbox.checked = false;
+}
 
-function fechar () {
-
-    if( menu.style.visibility == 'hidden' ){        
-
-        menu.style.visibility = 'block'
-
-    }else{
-
-        menu.style.visibility = 'hidden'
-
-    }
+function abrir () {   
+    checkbox.checked = true;
 }
