@@ -14,6 +14,14 @@ body{
 	overflow-x: hidden;
 	width: 100%;
 }
+/*CHART.JS*/
+canvas{
+
+  width:50vw !important;
+  height:50vh !important;
+ 
+}
+
 /*Estações*/
 
 .point{
@@ -154,11 +162,11 @@ font-size: 2.3rem;
 	margin-top: 10vw;
     position: bottom;
      width: 100%;
-	 flex-direction: column;
-	 align-items: center;
+
+
 	 text-align: center;
     padding: 3% 4%;
-    text-align: center;
+
     background:  #069370;
 }
 .logoiff{

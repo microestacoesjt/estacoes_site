@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			  <link rel="stylesheet" type="text/css" href="css/style.css">
+		      <link rel="stylesheet" type="text/css" href="css/botoes.css">
+		      <link rel="stylesheet" type="text/css" href="css/solicite.css">
+		      <link rel="stylesheet" type="text/css" href="css/sobre.css">
+		      <link rel="stylesheet" type="text/css" href="css/menu.css">
+		      <link rel="stylesheet" type="text/css" href="css/swiper.min.css" >
+			 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+		     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+		<script src="js/main.js"></script>
+	<!--	<script src="js/Chart.js"></script>
+		<script src="js/Chart.min.js"></script> -->
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3"></script>
+  <title>Microestações Meteorológicas</title>
+  
+  <style>
+
+    .grafico {
+
+        height: 500px;
+        width: 500px;
+    }
+
+</style>
+</head>
+<body>
+<main>
+ <header>
+    <img class="logo" src="images/logo.png">
+    <input type="checkbox" id="chk">
+    <label for="chk" class="show-menu-btn">
+      <i class="fas fa-ellipsis-h"></i>
+    </label>
+
+    <ul class="menu">
+      <a href="" onclick="fechar()" >Inicio</a>
+      <a href="#estacoes" onclick="fechar()" >Estações</a>
+      <a href="#sobre" onclick="fechar()">Sobre</a>
+      <a href="#" onclick="fechar()">Contato</a>
+
+      <label for="chk" class="hide-menu-btn">
+        <i class="fas fa-times"></i>
+      </label>
+    </ul>
+</header>
+<div class="grafico">
+  <canvas id="myChart" width="400" height="400"></canvas>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script src="js/data.js"></script>
+<script>
+var ctx = document.getElementById('myChart');
+var myChart = new Chart(ctx, {
+type: 'line',
+data: {
+  labels: ['10', '11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30',],
+  datasets: [{
+      label: 'Temp Max', 
+      data: `${dez} , ${onze}, ${doze}`,
+      backgroundColor: [
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+          'rgba(75, 192, 192, 0.2)',
+          'rgba(153, 102, 255, 0.2)',
+          'rgba(255, 159, 64, 0.2)'
+      ],
+      borderColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+          'rgba(255, 159, 64, 1)'
+      ],
+      borderWidth:  1 ,
+      
+  }]
+},
+options: {
+  scales: {
+      yAxes: [{
+          ticks: {
+              beginAtZero: true
+          }
+      }]
+  }
+}
+});
+</script>
+
+
+
+
+
+<footer class="rodape"> <a class="copyright">© 2020 Projeto Micro Estações Meteorológicas - Programa Jovens Talentos FAPERJ. Todos os direitos reservados. </a></footer>
+</main>
+
+</body>
+</html>

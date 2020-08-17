@@ -194,6 +194,7 @@ margin-top: 1vw;
         flex-wrap: nowrap;
         overflow-x: auto;
         overflow-y: hidden;
+        
 }
 .lista h1{
 	position: absolute;
