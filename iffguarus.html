@@ -17,6 +17,78 @@
 	<!--	<script src="js/Chart.js"></script>
 		<script src="js/Chart.min.js"></script> -->
 		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3"></script>
+	<style>
+
+        ul li {
+
+            margin: 0;
+            padding: 0;
+
+        }
+        .list::before {
+            content: "◯";
+            color: #069370; 
+        }
+
+        #list1::before {
+            content: "◯ 2019";
+            color: #069370; 
+            display: flex;
+        }
+
+        #list2::before {
+            content: "◯ 2020";
+            color: #069370; 
+        }
+
+        /* #testeLista li::before {
+            content: "◯";
+            color: red;
+        } */
+
+        .divLista{
+
+            display: flex;
+            align-items: center;
+            padding-left: 5px;
+            margin: -5px 0px -4.5px 7.5px;
+
+        }
+
+        .divLista img {
+
+            height: 15px;
+            width: 15px;
+
+        }
+
+
+        .imgDivLista{
+
+            margin-top: 10;
+            padding: 10px 0px;
+
+        }
+
+        #divLista1 {
+
+            /* padding-left: 5px; */
+
+        }
+
+        .textoGenerico {
+            margin-left: 3px;
+        }
+
+        .main {
+
+            display: flex;
+            justify-content: space-between;
+            padding-right: 30vw;
+
+        }
+
+    </style>
 	<title>Microestações Meteorológicas</title>
 </head>
 <body>
@@ -40,51 +112,126 @@
 <main>
   
 <section class="Principal">
-  
-  <dl class="listall">
-    <dt> <h1 class="listh1">2019 </h1> </dt>
-              <dd class="listmonths"> 
-                <li>Janeiro</li>
-                  <li>Fevereiro</li>
-                    <li>Março</li>
-                      <li>Abril</li>
-                        <li>Junho</li>
-                          <li>Julho</li>
-                            <li>Agosto</li>
-                              <li>Setembro</li>
-                                <li>Outubro</li>
-                                  <li>Novembro</li>
-                                     <li>Dezembro</li>
-              </dd>
- <dt><h1 class="listh1">2020 </h1></dt>
-              <dd class="listmonths"> 
-                <li>Janeiro</li>
-                  <li>Fevereiro</li>
-                    <li>Março</li>
-                      <li>Abril</li>
-                        <li>Junho</li>
-                          <li>Julho</li>
-                            <li>Agosto</li>
-                              <li>Setembro</li>
-                                <li>Outubro</li>
-                                  <li>Novembro</li>
-                                     <li>Dezembro</li>
-              </dd>
 
+<div class="main" >
 
+        <div>
 
+            <ul style="list-style: none;" id="testeLista" >
 
-  </dl>
+                <li style="cursor: pointer;" class="list" id="list1" >
+                    
+                <div class="divLista" onclick="alter(1)" id="divLista1">
+    
+                        <p class="textoGenerico" >Setembro</p>
+        
+                    </div>
+                    
+                <div class="divLista" onclick="alter(2)" id="divLista2">
+    
+                        <p class="textoGenerico" >Dezembro</p>
+        
+                    </div>
+                    
+                </li>
+                
 
+                <li style="cursor: pointer;" class="list" id="list2">
+                    
+                    <div class="divLista" onclick="alter(3)" id="divLista3" >
 
+                        <p class="textoGenerico" >Janeiro</p>
+        
+                    </div>
+                </li>
 
+            </ul>
 
+        </div>
 
+        <div>
+
+            <iframe width="700" height="500" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVASs4CpIhaNqZGbKA0EVgErdxWhSjoQp2WDgi6PQc5oullWA1OXiCAqlUZDsbm-yHOkssukFYJrLj/pubchart?oid=377299482&amp;format=interactive"></iframe>
+
+            <iframe width="757" height="462" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVASs4CpIhaNqZGbKA0EVgErdxWhSjoQp2WDgi6PQc5oullWA1OXiCAqlUZDsbm-yHOkssukFYJrLj/pubchart?oid=1297938992&amp;format=interactive"></iframe>
+
+        </div>
+
+    </div>
 
 </section>
 
 <footer class="rodape"> <a class="copyright">© 2020 Projeto Micro Estações Meteorológicas - Programa Jovens Talentos FAPERJ. Todos os direitos reservados. </a></footer>
 </main>
+	
+	<script>
+
+        var teste = document.querySelector(".imgDivLista")
+        var divLista1 = document.querySelector("#divLista1")
+        var divLista2 = document.querySelector("#divLista2")
+        var divLista3 = document.querySelector("#divLista3")
+
+        function alter(num) {
+
+            switch (num) {
+
+                case 1:
+
+                    if (divLista1.style.border == "none" ) {
+
+                        divLista1.style.borderLeft = "1px solid #069370"
+
+                    }else {
+
+                        divLista2.style.border = "none"
+                        divLista3.style.border = "none"
+
+                    }
+
+                break;
+
+                case 2:
+
+                    if (divLista2.style.border == "none" ) {
+
+                        divLista2.style.borderLeft = "1px solid #069370"
+                        divLista1.style.borderLeft = "1px solid #069370"
+
+                    }else {
+
+                        divLista2.style.border = "none"
+                        divLista3.style.border = "none"
+
+                    }
+
+                break;
+
+                case 3:
+
+                    if (divLista3.style.border == "none" ) {
+
+                        divLista1.style.borderLeft = "1px solid #069370"
+                        divLista2.style.borderLeft = "1px solid #069370"
+                        divLista3.style.borderLeft = "1px solid #069370"
+
+                    }else {
+
+                        divLista3.style.border = "none"
+
+                    }
+
+                break;
+            
+                default:
+
+                    break;
+
+            }
+            
+            
+        }
+        
+    </script>
 
 </body>
 </html>
