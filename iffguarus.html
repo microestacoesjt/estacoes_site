@@ -80,9 +80,18 @@
 
         <div id="infosSetembro">
 
-            <iframe width="700" height="500" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVASs4CpIhaNqZGbKA0EVgErdxWhSjoQp2WDgi6PQc5oullWA1OXiCAqlUZDsbm-yHOkssukFYJrLj/pubchart?oid=377299482&amp;format=interactive" id="temp_setembro"></iframe>
+            <iframe width="700" height="700" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVASs4CpIhaNqZGbKA0EVgErdxWhSjoQp2WDgi6PQc5oullWA1OXiCAqlUZDsbm-yHOkssukFYJrLj/pubchart?oid=377299482&amp;format=interactive" id="temp_setembro" ></iframe>
 
-            <iframe width="757" height="462" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVASs4CpIhaNqZGbKA0EVgErdxWhSjoQp2WDgi6PQc5oullWA1OXiCAqlUZDsbm-yHOkssukFYJrLj/pubchart?oid=1297938992&amp;format=interactive" id="umi_setembro"></iframe>
+	    <iframe width="700" height="700" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVASs4CpIhaNqZGbKA0EVgErdxWhSjoQp2WDgi6PQc5oullWA1OXiCAqlUZDsbm-yHOkssukFYJrLj/pubchart?oid=1297938992&amp;format=interactive"id="umi_setembro"></iframe>
+
+        </div>
+	
+	
+        <div id="infosJaneiro">
+
+            <iframe width="715" height="442" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQLRj0AoPafdQOwEnHwm3D6CsoCum6NvonTv4bonXLdCMQsknhdi_h4xbZqKU7Fse-e-DH0Hvcms2SW/pubchart?oid=457391715&amp;format=interactive"></iframe>
+		
+	    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQLRj0AoPafdQOwEnHwm3D6CsoCum6NvonTv4bonXLdCMQsknhdi_h4xbZqKU7Fse-e-DH0Hvcms2SW/pubchart?oid=1799300536&amp;format=interactive"></iframe>
 
         </div>
 
@@ -101,7 +110,8 @@
         var divLista3 = document.querySelector("#divLista3")
 	
 	var infosSetembro = document.querySelector("#infosSetembro")
-
+   	var infosJaneiro = document.querySelector("#infosJaneiro")
+	
         function alter(num) {
 
             switch (num) {
@@ -111,12 +121,14 @@
                     if (divLista1.style.border == "none" ) {
 
                         divLista1.style.borderLeft = "1px solid #069370"
+                        infosJaneiro.style.display = "none"
 
                     }else {
 
                         divLista2.style.border = "none"
                         divLista3.style.border = "none"
-			infosSetembro.style.display = "block"
+                        infosSetembro.style.display = "block"
+                        infosJaneiro.style.display = "block"
 
                     }
 
@@ -128,12 +140,15 @@
 
                         divLista2.style.borderLeft = "1px solid #069370"
                         divLista1.style.borderLeft = "1px solid #069370"
-			infosSetembro.style.display = "none"
+                        infosSetembro.style.display = "none"
+                        infosJaneiro.style.display = "none"
 
                     }else {
 
                         divLista2.style.border = "none"
                         divLista3.style.border = "none"
+                        infosSetembro.style.display = "none"
+                        infosJaneiro.style.display = "none"
 
                     }
 
@@ -146,7 +161,8 @@
                         divLista1.style.borderLeft = "1px solid #069370"
                         divLista2.style.borderLeft = "1px solid #069370"
                         divLista3.style.borderLeft = "1px solid #069370"
-			infosSetembro.style.display = "none"
+                        infosSetembro.style.display = "none"
+                        infosJaneiro.style.display = "block"
 
                     }else {
 
