@@ -4,7 +4,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+			  <link rel="stylesheet" type="text/css" href="css/style.css">
+		      <link rel="stylesheet" type="text/css" href="css/botoes.css">
+		      <link rel="stylesheet" type="text/css" href="css/solicite.css">
+		      <link rel="stylesheet" type="text/css" href="css/sobre.css">
+          <link rel="stylesheet" type="text/css" href="css/menu.css">
+          <link rel="stylesheet" type="text/css" href="css/iffguarus.css">
+		      <link rel="stylesheet" type="text/css" href="css/swiper.min.css" >
 			 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
 		     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 		<script src="js/main.js"></script>
@@ -35,11 +41,6 @@
             color: #069370; 
         }
 
-        /* #testeLista li::before {
-            content: "◯";
-            color: red;
-        } */
-
         .divLista{
 
             display: flex;
@@ -64,11 +65,12 @@
 
         }
 
-        #divLista1 {
-
-            /* padding-left: 5px; */
-
-        }
+	#temp_setembro{
+	display: none;	
+	}
+	#umi_setembro{
+	display: none;	
+	}
 
         .textoGenerico {
             margin-left: 3px;
@@ -145,9 +147,9 @@
 
         <div>
 
-            <iframe width="700" height="500" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVASs4CpIhaNqZGbKA0EVgErdxWhSjoQp2WDgi6PQc5oullWA1OXiCAqlUZDsbm-yHOkssukFYJrLj/pubchart?oid=377299482&amp;format=interactive"></iframe>
+            <iframe width="700" height="500" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVASs4CpIhaNqZGbKA0EVgErdxWhSjoQp2WDgi6PQc5oullWA1OXiCAqlUZDsbm-yHOkssukFYJrLj/pubchart?oid=377299482&amp;format=interactive" id="temp_setembro"></iframe>
 
-            <iframe width="757" height="462" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVASs4CpIhaNqZGbKA0EVgErdxWhSjoQp2WDgi6PQc5oullWA1OXiCAqlUZDsbm-yHOkssukFYJrLj/pubchart?oid=1297938992&amp;format=interactive"></iframe>
+            <iframe width="757" height="462" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVASs4CpIhaNqZGbKA0EVgErdxWhSjoQp2WDgi6PQc5oullWA1OXiCAqlUZDsbm-yHOkssukFYJrLj/pubchart?oid=1297938992&amp;format=interactive" id="umi_setembro"></iframe>
 
         </div>
 
@@ -164,6 +166,9 @@
         var divLista1 = document.querySelector("#divLista1")
         var divLista2 = document.querySelector("#divLista2")
         var divLista3 = document.querySelector("#divLista3")
+	
+	var tempSetembro = document.querySelector("#temp_setembro")
+	var umiSetembro = document.querySelector("#umi_setembro")
 
         function alter(num) {
 
@@ -174,6 +179,8 @@
                     if (divLista1.style.border == "none" ) {
 
                         divLista1.style.borderLeft = "1px solid #069370"
+		    	tempSetembro.style.display = "block"
+		   	umiSetembro.style.display = "block"
 
                     }else {
 
@@ -226,6 +233,6 @@
         }
         
     </script>
-	
+
 </body>
 </html>
