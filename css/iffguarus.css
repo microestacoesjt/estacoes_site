@@ -42,6 +42,10 @@ ul li {
 .list::before {
     content: "◯";
     color: #069370; 
+    margin-top: 30px;
+    font-size: 40px; 
+
+
 }
 
 #list1::before {
@@ -53,6 +57,8 @@ ul li {
 #list2::before {
     content: "◯ 2020";
     color: #069370; 
+     display: flex;
+
 }
 
 /* #testeLista li::before {
@@ -66,6 +72,11 @@ ul li {
     align-items: center;
     padding-left: 5px;
     margin: -5px 0px -4.5px 7.5px;
+    margin-left: 10px;
+    font-size:35px; 
+    padding: 10px;
+    margin-left: 80px;
+
 
 }
 
@@ -119,3 +130,73 @@ ul li {
 }
 
 }
+
+.estrutura{
+
+margin-left: 100px;
+margin-top: 70px;
+ font-family:sans-serif;
+
+}
+.graficox{
+
+
+    width: 20vw;
+    height: 20vw;
+  box-shadow:2px 2px 5px;
+  border-radius:10px;
+  margin-top: 30px;
+}
+.graficox:hover{
+
+
+
+    width: 40vw;
+    height: 30vw;
+  box-shadow:2px 2px 5px;
+  border-radius:10px;
+  margin-top:20px;
+z-index: 1;
+  position: absolute;
+}
+
+
+
+.graficoy{
+
+
+   
+    width: 20vw;
+    height: 20vw;
+  box-shadow:2px 2px 5px;
+  border-radius:10px;
+  margin-top: 30px;
+ 
+}
+.grafico1{
+text-align: justify;
+
+ 
+    width:20vw;
+    height: 20vw;
+  box-shadow:2px 2px 5px;
+  border-radius:10px;
+  margin-top:30px;
+}
+.grafico2{
+
+text-align: justify;
+ 
+    width: 20vw;
+    height: 20vw;
+  box-shadow:2px 2px 5px;
+  border-radius:10px;
+  margin-top: 30px;
+}
+
+.graficototal{
+    text-align: justify;
+    float: left;
+    display: flex;
+}
+ 

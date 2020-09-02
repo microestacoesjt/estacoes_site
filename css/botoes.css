@@ -211,8 +211,7 @@ flex-direction: column;
 
  }
 
-
-iframe{
+.mapdt{
     display: flex;
     width: 50vw;
     height: 25vw;
