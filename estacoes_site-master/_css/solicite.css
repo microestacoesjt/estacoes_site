@@ -1,0 +1,78 @@
+.solicite{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.form{
+    align-items: center;
+    justify-content: center;
+
+     display: flex;
+    flex-direction: column;
+}
+.solicite h1{
+
+    color :#069370;
+	font-size: 2.6rem;
+}
+ input {
+        padding: 5px;
+        width: 250px;
+        background-color: #c1c1c1;
+        border: none;
+        border-radius: 3px;
+        min-width: 40vw;
+        height: 3vh;
+        margin: 10px 0px;
+    
+
+    }
+a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.btn_form{
+    padding: 1rem;
+    cursor: pointer;
+    background-color: #069370;
+ /*	border-radius: 2rem;*/
+	color: #fafafa;
+	padding-bottom: 2rem;
+	text-transform: uppercase;
+}
+.contato{
+    margin: 10px;
+    flex-direction: column;
+    display: flex;
+    border-radius: 15px;
+    border: 10px solid #c1c1c1;
+    padding: 15px;
+    background: #fafafa;
+}
+
+.linha2{
+    width: 30vw;
+    height: 1vh;
+    background-image:  linear-gradient(to left, rgb(255, 255, 255),#069370);
+    /* background-color: rgba(0, 0, 0, 0.753); */
+    /* border-top: 4px solid var(--corLinear); */
+    border-radius: 10px;
+ 
+
+}
+
+.texta{
+        padding: 5px;
+        width: 250px;
+        background-color: #c1c1c1;
+        border: none;
+        border-radius: 3px;
+        min-width: 40vw;
+        height: 10vh;
+        margin: 10px 0px;
+}
