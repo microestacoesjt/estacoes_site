@@ -1,3 +1,11 @@
+.Principal {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+
+}
+
 .listh1{
 	color: #069370;
 	font-size: 2.3rem;
@@ -7,7 +15,6 @@
 	font-size: 1.2rem;
 	margin-left : 5vh;
 
-
 }
 
 .listmonths li{
@@ -15,8 +22,8 @@
 	display: block;
 	width: 100px;
 	height: 35px;
-	  display: flex;
-		align-items: center 
+    display: flex;
+    align-items: center 
 
 
 }
@@ -26,7 +33,6 @@
 	color: white;
 
 }
-
 
 .listall{
 	margin-left: 5vh;
@@ -42,9 +48,8 @@ ul li {
 .list::before {
     content: "◯";
     color: #069370; 
-    margin-top: 30px;
+    margin-top: -10px;
     font-size: 40px; 
-
 
 }
 
@@ -57,25 +62,20 @@ ul li {
 #list2::before {
     content: "◯ 2020";
     color: #069370; 
-     display: flex;
+    display: flex;
 
 }
-
-/* #testeLista li::before {
-    content: "◯";
-    color: red;
-} */
 
 .divLista{
 
     display: flex;
     align-items: center;
     padding-left: 5px;
-    margin: -5px 0px -4.5px 7.5px;
+    margin: -12px 0px -4.5px 0px;
     margin-left: 10px;
     font-size:35px; 
     padding: 10px;
-    margin-left: 80px;
+    margin-left: 20px;
 
 
 }
@@ -87,7 +87,6 @@ ul li {
 
 }
 
-
 .imgDivLista{
 
     margin-top: 10;
@@ -95,14 +94,9 @@ ul li {
 
 }
 
-#divLista1 {
-
-    /* padding-left: 5px; */
-
-}
-
 .textoGenerico {
     margin-left: 3px;
+    /* font-size: 20px; */
 }
 
 .main {
@@ -114,14 +108,17 @@ ul li {
 }
 
 #infosSetembro {
-    display: none;        
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    align-items: center;
+    justify-content: center;
 }
 
 #infosJaneiro {
     display: none;
 }
-
-
 
 @media (min-width: 500px){
 
@@ -133,70 +130,37 @@ ul li {
 
 .estrutura{
 
-margin-left: 100px;
-margin-top: 70px;
- font-family:sans-serif;
+    margin-left: 80px;
+    margin-top: 70px;
+    font-family:sans-serif;
+    width: 25vw;
 
 }
 .graficox{
 
+    width: 55vw;
+    height: 35vw;
+    box-shadow: 2px 1.5px 8px;
+    border-radius:10px;
+    margin-top: 30px;
 
-    width: 20vw;
-    height: 20vw;
-  box-shadow:2px 2px 5px;
-  border-radius:10px;
-  margin-top: 30px;
 }
-.graficox:hover{
-
-
-
-    width: 40vw;
-    height: 30vw;
-  box-shadow:2px 2px 5px;
-  border-radius:10px;
-  margin-top:20px;
-z-index: 1;
-  position: absolute;
-}
-
-
 
 .graficoy{
 
-
-   
-    width: 20vw;
-    height: 20vw;
-  box-shadow:2px 2px 5px;
-  border-radius:10px;
-  margin-top: 30px;
+    width: 55vw;
+    height: 35vw;
+    box-shadow: 2px 1.5px 8px;
+    border-radius:10px;
+    margin-top: 30px;
  
-}
-.grafico1{
-text-align: justify;
-
- 
-    width:20vw;
-    height: 20vw;
-  box-shadow:2px 2px 5px;
-  border-radius:10px;
-  margin-top:30px;
-}
-.grafico2{
-
-text-align: justify;
- 
-    width: 20vw;
-    height: 20vw;
-  box-shadow:2px 2px 5px;
-  border-radius:10px;
-  margin-top: 30px;
 }
 
 .graficototal{
-    text-align: justify;
-    float: left;
-    display: flex;
+    height: 100%;
+    width: 75vw;
+    align-items: center;
+    justify-content: center;
+
 }
  
