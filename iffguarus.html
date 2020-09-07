@@ -20,89 +20,96 @@
 
 	<title>Microestações Meteorológicas</title>
 </head>
+
 <body>
-<main>
- <header>
-    <img class="logo" src="images/logo.png">
-    <input type="checkbox" id="chk">
-    <label for="chk" class="show-menu-btn">
-      <i class="fas fa-ellipsis-h"></i>
-    </label>
 
-    <ul class="menu">
-      <a href="index.html" onclick="fechar() " >Inicio</a>
+        <header>
+            <img class="logo" src="images/logo.png">
+            <input type="checkbox" id="chk">
+            <label for="chk" class="show-menu-btn">
+            <i class="fas fa-ellipsis-h"></i>
+            </label>
+
+            <ul class="menu">
+            <a href="index.html" onclick="fechar() " >Inicio</a>
 
 
-      <label for="chk" class="hide-menu-btn">
-        <i class="fas fa-times"></i>
-      </label>
-    </ul>
-</header>
-<main>
-  
-<section class="Principal">
+            <label for="chk" class="hide-menu-btn">
+                <i class="fas fa-times"></i>
+            </label>
+            </ul>
+        </header>
 
-<div class="main" >
-<section class="estrutura">
-
-            <ul style="list-style: none;" id="testeLista" >
-
-                <li style="cursor: pointer;" class="list" id="list1" >
-                    
-                <div class="divLista" onclick="alter(1)" id="divLista1">
+    <main>
     
-                        <p class="textoGenerico" >Setembro</p>
-        
-                    </div>
-                    
-                <div class="divLista" onclick="alter(2)" id="divLista2">
-    
-                        <p class="textoGenerico" >Dezembro</p>
-        
-                    </div>
-                    
-                </li>
+        <section class="Principal">
+
+            <div class="main" >
+
+                <section class="estrutura">
+
+                    <ul style="list-style: none;" id="testeLista" >
+
+                        <li style="cursor: pointer;" class="list" id="list1" >
+                            
+                            <div class="divLista" onclick="alter(1)" id="divLista1">
+
+                                    <p class="textoGenerico" >Setembro</p>
+
+                            </div>
+                                
+                            <div class="divLista" onclick="alter(2)" id="divLista2">
+
+                                    <p class="textoGenerico" >Dezembro</p>
+
+                            </div>
+                            
+                        </li>
+
+                        <li style="cursor: pointer;" class="list" id="list2">
+                            
+                            <div class="divLista" onclick="alter(3)" id="divLista3" >
+
+                                <p class="textoGenerico" >Janeiro</p>
+
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </section>
+
+                <section class="graficototal">
                 
 
-                <li style="cursor: pointer;" class="list" id="list2">
-                    
-                    <div class="divLista" onclick="alter(3)" id="divLista3" >
+                    <div id="infosSetembro">
 
-                        <p class="textoGenerico" >Janeiro</p>
-        
+                        <iframe class="graficox" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVASs4CpIhaNqZGbKA0EVgErdxWhSjoQp2WDgi6PQc5oullWA1OXiCAqlUZDsbm-yHOkssukFYJrLj/pubchart?oid=377299482&amp;format=interactive" id="temp_setembro" ></iframe>
+
+                        <iframe class="graficoy" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVASs4CpIhaNqZGbKA0EVgErdxWhSjoQp2WDgi6PQc5oullWA1OXiCAqlUZDsbm-yHOkssukFYJrLj/pubchart?oid=1297938992&amp;format=interactive"id="umi_setembro"></iframe>
+
                     </div>
-                </li>
+                    
+                    <div id="infosJaneiro">
 
-            </ul>
+                        <iframe  class="graficox"   width="30" height="10" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQLRj0AoPafdQOwEnHwm3D6CsoCum6NvonTv4bonXLdCMQsknhdi_h4xbZqKU7Fse-e-DH0Hvcms2SW/pubchart?oid=457391715&amp;format=interactive"></iframe>
+                    
+                        <iframe  class="graficoy"   width="30" height="10" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQLRj0AoPafdQOwEnHwm3D6CsoCum6NvonTv4bonXLdCMQsknhdi_h4xbZqKU7Fse-e-DH0Hvcms2SW/pubchart?oid=1799300536&amp;format=interactive"></iframe>
 
- </section>
+                    </div>
 
- <section class="graficototal">
-       
+                </section>
 
-        <div id="infosSetembro">
+            </div>
 
-<iframe class="graficox" width="30" height="10" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVASs4CpIhaNqZGbKA0EVgErdxWhSjoQp2WDgi6PQc5oullWA1OXiCAqlUZDsbm-yHOkssukFYJrLj/pubchart?oid=377299482&amp;format=interactive" id="temp_setembro" ></iframe>
+        </section>
 
-<iframe class="graficoy" width="30" height="10" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVASs4CpIhaNqZGbKA0EVgErdxWhSjoQp2WDgi6PQc5oullWA1OXiCAqlUZDsbm-yHOkssukFYJrLj/pubchart?oid=1297938992&amp;format=interactive"id="umi_setembro"></iframe>
+        </section>
 
-        </div>
-		
-        <div id="infosJaneiro">
+        <!-- <footer class="rodape"> <a class="copyright">© 2020 Projeto Micro Estações Meteorológicas - Programa Jovens Talentos FAPERJ. Todos os direitos reservados. </a></footer> -->
 
-            <iframe  class="grafico1"   width="30" height="10" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQLRj0AoPafdQOwEnHwm3D6CsoCum6NvonTv4bonXLdCMQsknhdi_h4xbZqKU7Fse-e-DH0Hvcms2SW/pubchart?oid=457391715&amp;format=interactive"></iframe>
-		
-	    <iframe  class="grafico2"   width="30" height="10" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQLRj0AoPafdQOwEnHwm3D6CsoCum6NvonTv4bonXLdCMQsknhdi_h4xbZqKU7Fse-e-DH0Hvcms2SW/pubchart?oid=1799300536&amp;format=interactive"></iframe>
-
-        </div>
-
-    </div>
-    </section>
-
-</section>
-
-<footer class="rodape"> <a class="copyright">© 2020 Projeto Micro Estações Meteorológicas - Programa Jovens Talentos FAPERJ. Todos os direitos reservados. </a></footer>
-</main>
+    </main>
 	
 	<script>
 
@@ -111,8 +118,8 @@
         var divLista2 = document.querySelector("#divLista2")
         var divLista3 = document.querySelector("#divLista3")
 	
-	var infosSetembro = document.querySelector("#infosSetembro")
-   	var infosJaneiro = document.querySelector("#infosJaneiro")
+        var infosSetembro = document.querySelector("#infosSetembro")
+        var infosJaneiro = document.querySelector("#infosJaneiro")
 	
         function alter(num) {
 
@@ -122,15 +129,16 @@
 
                     if (divLista1.style.border == "none" ) {
 
-                        divLista1.style.borderLeft = "1px solid #069370"
+                        divLista1.style.borderLeft = "2px solid #069370"
+                        infosSetembro.style.display = "block"
                         infosJaneiro.style.display = "none"
 
                     }else {
 
-			divLista1.style.borderLeft = "none"
+			            divLista1.style.border = "none"
                         divLista2.style.border = "none"
                         divLista3.style.border = "none"
-                        infosSetembro.style.display = "block"
+                        infosSetembro.style.display = "none"
                         infosJaneiro.style.display = "none"
 
                     }
@@ -141,8 +149,8 @@
 
                     if (divLista2.style.border == "none" ) {
 
-                        divLista2.style.borderLeft = "1px solid #069370"
-                        divLista1.style.borderLeft = "1px solid #069370"
+                        divLista2.style.borderLeft = "2px solid #069370"
+                        divLista1.style.borderLeft = "2px solid #069370"
                         infosSetembro.style.display = "none"
                         infosJaneiro.style.display = "none"
 
@@ -161,15 +169,16 @@
 
                     if (divLista3.style.border == "none" ) {
 
-                        divLista1.style.borderLeft = "1px solid #069370"
-                        divLista2.style.borderLeft = "1px solid #069370"
-                        divLista3.style.borderLeft = "1px solid #069370"
+                        divLista1.style.borderLeft = "2px solid #069370"
+                        divLista2.style.borderLeft = "2px solid #069370"
+                        divLista3.style.borderLeft = "2px solid #069370"
                         infosSetembro.style.display = "none"
                         infosJaneiro.style.display = "block"
-
+                        
                     }else {
-
+                        
                         divLista3.style.border = "none"
+                        infosJaneiro.style.display = "none"
 
                     }
 
